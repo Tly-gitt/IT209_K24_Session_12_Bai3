@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "==> Đang triển khai mã nguồn từ nhánh develop lên Staging..."
           echo "Environment: staging"
-          echo "Commit SHA: `${{ github.sha }}"
+          echo "Commit SHA: ${{ github.sha }}"
           echo "Triển khai Staging hoàn tất thành công!"
 
   deploy-prod:
@@ -40,5 +40,5 @@ jobs:
         run: |
           echo "==> Đang triển khai mã nguồn từ nhánh main lên Production..."
           echo "Environment: production (Đã được phê duyệt bởi reviewer)"
-          echo "Commit SHA: `${{ github.sha }}"
+          echo "Commit SHA: ${{ github.sha }}"
           echo "Triển khai Production an toàn hoàn tất!"
